@@ -1,0 +1,30 @@
+# Dry run mode is used for testing. It will make no changes even if the bot is currently the first lady.
+dry_run: false
+# The username of the bot. Used for detecting if the bot is currently the first lady or not.
+username: ""
+# Alliance settings.
+alliances:
+  # Name of the alliance
+  abc:
+    # Type of the alliance. Possible values `NAP` or `SVS`.
+    type: NAP
+    # Aliases can be added if an alliance name might be read incorrectly.
+    # Common issues with 0 ~ O and l ~ I ~ 1. The game font doesn't make distinguishing these easy.
+    aliases:
+      - DEF
+  def:
+    type: SVS
+# Settings for queues.
+queues:
+  # Number of player waiting thesholds.
+  thresholds:
+    # The high theshold will approve only NAP alliances if queue is greater than 40.
+    high: 40
+    # The low threshold will approve only NAP and SVS alliances if queue is greater than 20.
+    low: 20
+  # Time limits on each queue in seconds.
+  time_limits:
+    secretary_of_strategy: 1800
+    secretary_of_interior: 310
+    # If no queue time limit is defined, it uses the default.
+    default: 600
