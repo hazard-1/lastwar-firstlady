@@ -29,3 +29,7 @@ Start Android virtual device, then run the following from the root directory of 
 ```sh
 pm2 start
 ```
+
+## Disclaimer
+
+- Your account(s) may be banned for using this so use at your own risk.
